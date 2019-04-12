@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/post/post",
+    "pages/test/test"
+    ,
+ 
+   
+        "pages/detial/detial",
+   
+    "pages/welcome/welcome",
+
+    "pages/info/info",
+    "pages/richtest/richtest"
+
+  ],
+  "window": {
+    "navigationBarTitleText": "这里是标题"
+  }
+}

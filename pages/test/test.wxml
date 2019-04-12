@@ -1,0 +1,5 @@
+<view class='btn'  bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+OK
+</view>
+<view><van-button type = "info">按钮</van-button></view>
+
