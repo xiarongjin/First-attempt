@@ -1,19 +1,14 @@
 {
   "pages": [
-    "pages/post/post",
-    "pages/test/test"
-    ,
- 
-   
-        "pages/detial/detial",
-   
     "pages/welcome/welcome",
-
+    "pages/post/post",
+    "pages/test/test",
+    "pages/detial/detial",
     "pages/info/info",
     "pages/richtest/richtest"
-
   ],
   "window": {
-    "navigationBarTitleText": "这里是标题"
+    "navigationBarTitleText": "这里是标题",
+    "navigationBarTextStyle":  "black"
   }
 }
