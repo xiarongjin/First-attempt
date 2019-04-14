@@ -55,10 +55,14 @@ title{
     color:black;
     padding: 40rpx 0  0rpx 100rpx;
 
-   
-    
 }
- 
+ .wchead{
+   height: 150rpx;
+    color:black;
+    padding: 40rpx 0  0rpx 100rpx;
+
+ }
+
 /* 当屏幕向左滑动，出现侧边栏的时候，主页的动画样式 */
 /* scale：取值范围 0~1 ，表示屏幕大小是原来的百分之几，可以自己修改成 0.8 试下*/
 /* translate(60%,0%) 表示向左滑动的时候，侧边栏占用平时的宽度为 60%   */
@@ -69,44 +73,29 @@ title{
  
 /* 主页样式 */
 .page-top {
-    height: auto;
+   padding-top:180rpx;
+    height:100%;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     transition: All 0.4s ease;
     -webkit-transition: All 0.4s ease;
     width: 100%; 
-  margin: 0 auto; 
-  background-color:  #f8f8f9;
+    margin: 0 auto; 
+    background-color:  #f8f8f9;
 }
-.movie{
 
-  height: 100rpx;
-  width: 750rpx;
-  padding: 20rpx;
-  border-bottom: 1rpx solid;
-  border-radius: 10rpx;
-    border-color:#cfcfcf;
 
-    
-  
-    /* border-style: soid; */
-}
-/* 左上角图标的样式 */
-.page-top image {
-    position: absolute;
-    width: 68rpx;
-    height: 68rpx;
-    left: 20rpx;
-    top: 20rpx;
-}
  
 /* 遮盖层样式 */
 .cover{
     width: 100%;
     height: 100%;
-    background-color:gray;
-    opacity: 0.5;
-    z-index: 9000;
+    background-color:#cfcfcf;
+    opacity: 0.4;
+    z-index:2;
+
+   
+    
 
 }
  
@@ -121,7 +110,7 @@ title{
 .card{
  margin-bottom: 20rpx;
  margin-top: 20rpx;
- margin-color: #f8f8f9;
+ 
 }
 .tianjia{
   
@@ -132,10 +121,10 @@ title{
 bottom: 60rpx;
   border-radius: 50%;
  
-  border: 1rpx solid #5cadff;
+  border: 1rpx solid #19be6b;
  
-  box-shadow: 3px 3px 10px #4770f5;
-  background-color: #5cadff;
+  box-shadow: 3px 3px 10px #19be6b;
+  background-color: #19be6b;
 
 }
 .i-swipeout-demo-button{
@@ -144,7 +133,44 @@ bottom: 60rpx;
   padding-top: 50rpx;
  margin-right: 60rpx;
   text-align: center;
-  margin-right: 0rpx;
+
 
 }
-
+.homeicon{
+ position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+ top: 0rpx;
+left: 60rpx;
+  border-radius: 50%;
+ 
+  border: 1rpx solid #f8f8f9;
+ 
+  box-shadow: 3px 3px 10px #f8f8f9;
+  background-color: #f8f8f9;
+overflow:hidden;
+}
+.shousuo{
+  position: fixed;
+  width:680rpx;
+  height: 80rpx;
+ top: 90rpx;
+left: 8rpx;
+  margin-left:30rpx;
+  border-radius:15rpx;
+  border: 1rpx solid #cfcfcf;
+ 
+  box-shadow: 3px 3px 10px #f8f8f9;
+  background-color: #cfcfcf;
+overflow:hidden;
+}
+.dingbu{
+ 
+  position: fixed;
+  width: 100%;
+  height: 190rpx;
+  top: 0rpx;
+  left: 0rpx;
+  border: 1rpx solid #fff;
+  background-color: #fff;
+}

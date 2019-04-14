@@ -8,104 +8,114 @@ var initdata = function (that) {
   })
 }
 var app = new getApp();
+var X = 0;
 Page({
 
   data: {
     weeklyMovieList: [
       {
-        shows: "",
-        name: "泰坦尼克号",
-        comment: "失去的才是永恒的",
         id:0,
-        date:"2019/4/13",
-        // imagePath: "/images/titanic.jpg",
-        isHighlyRecommended: false,
+        card_name:"卡片名字",
+        card_comment:"卡片内容",
+        peview_time:"应在多久复习",
+        current_date:"2019/4/14",
       },
       {
-        shows: "",
-        name: "这个杀手不太冷",
-        comment: "小萝莉与怪蜀黍纯真灿烂的爱情故事",
-        id:1,
-        date: "2019/4/13",
-        // imagePath: "/images/leon.jpg",
-        isHighlyRecommended: false,
+        id: 0,
+        card_name: "卡片名字",
+        card_comment: "卡片内容",
+        peview_time: "应在多久复习",
+        current_date: "2019/4/14",
+      }, {
+        id: 0,
+        card_name: "卡片名字",
+        card_comment: "卡片内容",
+        peview_time: "应在多久复习",
+        current_date: "2019/4/14",
+      }, {
+        id: 0,
+        card_name: "卡片名字",
+        card_comment: "卡片内容",
+        peview_time: "应在多久复习",
+        current_date: "2019/4/14",
+      }, {
+        id: 0,
+        card_name: "卡片名字",
+        card_comment: "卡片内容",
+        peview_time: "应在多久复习",
+        current_date: "2019/4/14",
+      }, {
+        id: 0,
+        card_name: "卡片名字",
+        card_comment: "卡片内容",
+        peview_time: "应在多久复习",
+        current_date: "2019/4/14",
+      }, {
+        id: 0,
+        card_name: "卡片名字",
+        card_comment: "卡片内容",
+        peview_time: "应在多久复习",
+        current_date: "2019/4/14",
+      }, {
+        id: 0,
+        card_name: "卡片名字",
+        card_comment: "卡片内容",
+        peview_time: "应在多久复习",
+        current_date: "2019/4/14",
+      }, {
+        id: 0,
+        card_name: "卡片名字",
+        card_comment: "卡片内容",
+        peview_time: "应在多久复习",
+        current_date: "2019/4/14",
+      }, {
+        id: 0,
+        card_name: "卡片名字",
+        card_comment: "卡片内容片内容片内容片内容片内容片内容片内容片内容片内容片内容",
+        peview_time: "应在多久复习",
+        current_date: "2019/4/14",
+      }, {
+        id: 0,
+        card_name: "卡片名字",
+        card_comment: "卡片内容",
+        peview_time: "应在多久复习",
+        current_date: "2019/4/14",
+      }, {
+        id: 0,
+        card_name: "卡片名字",
+        card_comment: "卡片内容",
+        peview_time: "应在多久复习",
+        current_date: "2019/4/14",
       },
-      {
-        shows: "",
-        name: "教父",
-        comment: "最精彩的剧本，最真实的黑帮电影。",
-        id:2,
-        date: "2019/4/13",
-        // imagePath: "/images/jf.jpg",
-        isHighlyRecommended: true,
-      },
-      {
-        shows: "",
-        name:"我也2",
-        comment:"3333",
-        id:3,
-        date: "2019/4/13",
-      },
-      {
-        shows: "",
-        name: "我也2",
-        comment: "3333",
-        id: 3,
-        date: "2019/4/13",
-      },
-      {
-        shows: "",
-        name: "我也2",
-        comment: "3333",
-        id: 3,
-        date: "2019/4/13",
-      },
-      {
-        shows: "",
-        name: "我也2",
-        comment: "3333",
-        id: 3,
-        date: "2019/4/13",
-      },
-      {
-        shows: "",
-        name: "我也2",
-        comment: "3333",
-        id: 3,
-        date: "2019/4/13",
-      },
-      {
-        shows: "",
-        name: "我也2",
-        comment: "3333",
-        id: 3,
-        date: "2019/4/13",
-      },
-      {
-        shows: "",
-        name: "我也2",
-        comment: "3333",
-        id: 3,
-        date: "2019/4/13",
-      },
-     
-     
     ],
     count: 0,
     score: 61
   },
 
-  // // 点击左上角小图标事件
-  // onTap: function (event) {
-  //   wx.navigateTo({
-  //     url: "/pages/info/info"
-  //   });
+  // // 点击个人资料事件
+  onTap: function (event) {
+    wx.navigateTo({
+      url: "/pages/info/info"
+    });
 
-  //   // wx.switchTab({
-  //   // url: "/pages/post/post"
-  //   // });
+    // wx.switchTab({
+    // url: "/pages/post/post"
+    // });
 
-  // },
+  },
+  // 点击左上角小图标事件
+  tap_ch: function (e) {
+    if (this.data.open) {
+      this.setData({
+        open: false
+      });
+    } else {
+      this.setData({
+        open: true
+      });
+    }
+  },
+
   // 点击添加事件处理函数
   onTap1: function (event) {
     wx.navigateTo({
@@ -128,55 +138,48 @@ Page({
       url: '/pages/test/test',
      })
   },
-  tap_ch: function (e) {
-    if (this.data.open) {
-      this.setData({
-        open: false
-      });
-    } else {
-      this.setData({
-        open: true
-      });
-    }
-  },
+  
+ 
+  // //  左右滑动操作的代码
+  // //  bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" 
+  // tap_start: function (e) {
+  //   // touchstart事件
+  //   // 把手指触摸屏幕的那一个点的 x 轴坐标赋值给 mark 和 newmark
+   
+  //   this.data.mark = this.data.newmark = e.touches[0].pageX;
+  // },
 
-  tap_start: function (e) {
-    // touchstart事件
-    // 把手指触摸屏幕的那一个点的 x 轴坐标赋值给 mark 和 newmark
-    this.data.mark = this.data.newmark = e.touches[0].pageX;
-  },
+  // tap_drag: function (e) {
+  //   // touchmove事件
+  //   this.data.newmark = e.touches[0].pageX,
+  //     X = this.data.newmark - this.data.mark ;
+  //   // 手指从左向右移动
+  //   if (X > 30) {
+  //     this.istoright = true;
+  //   }
 
-  tap_drag: function (e) {
-    // touchmove事件
-    this.data.newmark = e.touches[0].pageX;
+  //   // 手指从右向左移动
+  //   if (X < 0) {
+  //     this.istoright = false;
+  //   }
+  //   this.data.mark = this.data.newmark;
+  // },
 
-    // 手指从左向右移动
-    if (this.data.mark  < this.data.newmark) {
-      this.istoright = true;
-    }
-
-    // 手指从右向左移动
-    if (this.data.mark > this.data.newmark) {
-      this.istoright = false;
-    }
-    this.data.mark = this.data.newmark;
-  },
-
-  tap_end: function (e) {
-    // touchend事件
-    this.data.mark = 0;
-    this.data.newmark = 0;
-    // 通过改变 opne 的值，让主页加上滑动的样式
-    if (this.istoright) {
-      this.setData({
-        open: true
-      });
-    } else {
-      this.setData({
-        open: false
-      });
-    }
-  },
+  // tap_end: function (e) {
+  //   // touchend事件
+  //   this.data.mark = 0;
+  //   this.data.newmark = 0;
+  //   // 通过改变 opne 的值，让主页加上滑动的样式
+  //   if (this.istoright) {
+  //     this.setData({
+  //       open: true
+  //     });
+  //   } else {
+  //     this.setData({
+  //       open: false
+  //     });
+  //   }
+  // },
   
    
 })
