@@ -3,7 +3,7 @@
   "usingComponents": {
    
     
-    
+      "van-search": "/dist/search/index",
       "van-button": "/dist/button/index",
       "i-swipeout": "/distiview/swipeout/index",
       "i-card": "/distiview/card/index",

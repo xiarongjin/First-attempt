@@ -1,15 +1,15 @@
 <view class="page">
     <!-- 侧边栏内容 -->
-      <view class="page-slidebar">
-        <view class="page-content">
+      <view class="page-slidebar"  bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" bindtap='tap_ch1' data-card_tap="onTap2" >
+        <view class="page-content" >
             <view class="wchead">
             <!-- 未登入样式 -->
             <!-- 登入后的样式 -->
               <view class='avatar'>
-                <!-- <open-data  type="userAvatarUrl"></open-data> -->
+                <open-data  type="userAvatarUrl"></open-data>
               </view>
               <view class='infotext'>              
-                  <!-- <open-data type="userNickName"></open-data> -->
+                  <open-data type="userNickName"></open-data>
               </view>
             </view>
             <view class="wc" bindtap="onTap">
@@ -29,7 +29,7 @@
   <view class="page-top {{open ? ['c-state','cover'] : ''}}">
   
       <view class='content'> 
-           <view class='card' wx:for="{{weeklyMovieList}}"bindtap="onTap2" data-text-id='{{item.id}}'>
+           <view class='card' wx:for="{{weeklyMovieList}}"bindtap="{{card_tap}}" data-text-id='{{item.id}}'>
               <i-swipeout  i-class="i-swipeout-demo-item" operateWidth="{{100}}">
                   <view slot="content">
                         <i-card title="{{item.card_name}}" extra="{{item.peview_time}}" >
@@ -43,15 +43,24 @@
               </i-swipeout>
          </view>
      
-      </view>
+      
           <view class='tianjia' bindtap="onTap1">
               <i-icon type="add" size="80" color="blue" />
           </view> 
       <view class="dingbu">
-            <view bindtap="tap_ch" class="homeicon">
+            <view bindtap="tap_ch" data-card_tap="null" class="homeicon">
              <open-data  type="userAvatarUrl"></open-data>
             </view> 
-          <input type="text" class="shousuo" placeholder="输入关键字查询">            </input>
+          <van-search
+  value="{{ value }}"  class="shousuo" 
+  placeholder="请输入卡片关键词"
+  use-action-slot
+  bind:search="onSearch"
+> 
+ 
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
       </view> 
+      </view>
   </view>
 </view>

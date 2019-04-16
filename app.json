@@ -1,16 +1,18 @@
 {
   "pages": [
+"pages/post/post",
 
-    "pages/post/post",
-    "pages/postdemo/postdemo",
-  
-  
-    
-   
-   
+"pages/postdemo/postdemo",
     "pages/test/test",
+  
+  
     
+
+ 
+       
+     
     "pages/welcome/welcome",
+    
     "pages/detial/detial",
     "pages/info/info",
     "pages/richtest/richtest"

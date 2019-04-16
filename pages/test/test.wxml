@@ -1,17 +1,12 @@
-<view class="i-swipeout-demo">
-
-    <i-swipeout  i-class="i-swipeout-demo-item" operateWidth="{{100}}">
-        <view slot="content">
-             <i-card title="{{item.name}}" extra="额外内容" >
-    <view slot="content">{{item.comment}}</view>
-    <view slot="footer">时间</view>
-</i-card>
-        </view>
-        <view slot="button" class="i-swipeout-demo-button">
-             <i-icon type="delete" size="50" color="red" />
-            <text style='color:red;font-size:40rpx;'>删除</text> 
-          
-        </view>
-        </i-swipeout>
-   
+<view class="dingbu">
+            <view bindtap="tap_ch" class="homeicon">
+             <open-data  type="userAvatarUrl"></open-data>
+            </view> 
+             <view class="button-sp-area">
+                   <wux-popover placement="bottomRight" title="ti" content="view">
+                   <wux-popover placement="bottomRight" title="ti" content="view">
+                <button size="mini">bottomRight</button>
+                   </wux-popover>
+                   </wux-popover>
+             </view>
 </view>

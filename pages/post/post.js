@@ -12,6 +12,9 @@ var X = 0;
 Page({
 
   data: {
+
+    card_tap: "onTap2",
+
     weeklyMovieList: [
       {
         id:0,
@@ -94,6 +97,13 @@ Page({
 
   // // 点击个人资料事件
   onTap: function (event) {
+
+
+    // var that = this
+    // var card_tap = e.currentTarget.dataset.card_tap;
+    // this.setData({
+    //   card_tap: card_tap
+    // });
     wx.navigateTo({
       url: "/pages/info/info"
     });
@@ -105,17 +115,26 @@ Page({
   },
   // 点击左上角小图标事件
   tap_ch: function (e) {
-    if (this.data.open) {
-      this.setData({
-        open: false
-      });
-    } else {
-      this.setData({
-        open: true
-      });
-    }
+   
+     
+      var that = this
+     var card_tap = e.currentTarget.dataset.card_tap;
+    this.setData({
+      open: true,
+      card_tap:card_tap
+    });
+     
   },
-
+  tap_ch1: function (e) {
+     
+      var that = this
+      var card_tap = e.currentTarget.dataset.card_tap;
+      this.setData({
+        open: false,
+        card_tap: card_tap
+      });
+    
+  },
   // 点击添加事件处理函数
   onTap1: function (event) {
     wx.navigateTo({
@@ -140,46 +159,46 @@ Page({
   },
   
  
-  // //  左右滑动操作的代码
-  // //  bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" 
-  // tap_start: function (e) {
-  //   // touchstart事件
-  //   // 把手指触摸屏幕的那一个点的 x 轴坐标赋值给 mark 和 newmark
+  //  左右滑动操作的代码
+  //  bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" 
+  tap_start: function (e) {
+    // touchstart事件
+    // 把手指触摸屏幕的那一个点的 x 轴坐标赋值给 mark 和 newmark
    
-  //   this.data.mark = this.data.newmark = e.touches[0].pageX;
-  // },
+    this.data.mark = this.data.newmark = e.touches[0].pageX;
+  },
 
-  // tap_drag: function (e) {
-  //   // touchmove事件
-  //   this.data.newmark = e.touches[0].pageX,
-  //     X = this.data.newmark - this.data.mark ;
-  //   // 手指从左向右移动
-  //   if (X > 30) {
-  //     this.istoright = true;
-  //   }
+  tap_drag: function (e) {
+    // touchmove事件
+    this.data.newmark = e.touches[0].pageX,
+      X = this.data.newmark - this.data.mark ;
+    // 手指从左向右移动
+    // if (X > 30) {
+    //   this.istoright = true;
+    // }
 
-  //   // 手指从右向左移动
-  //   if (X < 0) {
-  //     this.istoright = false;
-  //   }
-  //   this.data.mark = this.data.newmark;
-  // },
+    // 手指从右向左移动
+    if (X < 0) {
+      this.istoright = false;
+    }
+    this.data.mark = this.data.newmark;
+  },
 
-  // tap_end: function (e) {
-  //   // touchend事件
-  //   this.data.mark = 0;
-  //   this.data.newmark = 0;
-  //   // 通过改变 opne 的值，让主页加上滑动的样式
-  //   if (this.istoright) {
-  //     this.setData({
-  //       open: true
-  //     });
-  //   } else {
-  //     this.setData({
-  //       open: false
-  //     });
-  //   }
-  // },
+  tap_end: function (e) {
+    // touchend事件
+    this.data.mark = 0;
+    this.data.newmark = 0;
+    // 通过改变 opne 的值，让主页加上滑动的样式
+    if (this.istoright) {
+      this.setData({
+        open: true
+      });
+    } else {
+      this.setData({
+        open: false
+      });
+    }
+  },
   
    
 })

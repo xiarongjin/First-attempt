@@ -12,10 +12,11 @@ page, .page {
 /* 侧边栏样式 */
 .page-slidebar {
     height: 100%;
-    width: 750rpx;
+    width: 600rpx;
     position: fixed;
     background-color:white;
-    z-index: 0;
+    z-index: 7;
+
 }
  
 /* 控制侧边栏的内容距离顶部的距离 */
