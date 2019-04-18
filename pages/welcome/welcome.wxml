@@ -1,9 +1,14 @@
 <view class="container">
     <view>
-         <image   class='avatar' src='/image/timg.jpeg'></image>
+         <image   class='avatar' src='/image/logo.png'></image>
     </view>
-    <view class='motto'>小程序名字</view>
-    <view class="journey-container" bindtap="onTap">
-        <text class="journey">微信登入</text>
+    <view class='motto'>
+    
+    <text style='border-bottom:2px solid #bbbec4; font-size:80rpx; color:#bbbec4;height:82rpx;'>记忆卡片</text>
+    
+    <text style='color:#bbbec4; font-size:30rpx;height:10rpx;'> \n背诵其实很简单</text>
     </view>
+    <button class="journey-container" bindtap="onTap">
+        微信登入
+    </button>
 </view>

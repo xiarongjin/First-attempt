@@ -1,0 +1,18 @@
+page{
+    background-color: #F8F8F9;
+    font-color:#80848f;
+}
+image{
+    margin: 4px 0;
+}
+
+.journey-container{
+  
+  margin-left: 5%;
+  position: fixed;
+  bottom: 0rpx;
+   width: 90%;
+   background-color: #19be6b;
+   box-shadow: 3px 3px 10px #fff;
+   
+}

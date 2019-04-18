@@ -1,0 +1,64 @@
+ <view class='sum'>
+ <view class="weui-cells__title" style='font-weight:bold;color:#80848f;'>标题</view>
+   <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+           <view class="weui-cell__bd">
+                <input class="weui-input" placeholder="请输入标题" />
+           </view>
+      </view>
+  </view>
+
+
+<view class="weui-cells__title" style='font-weight:bold;color:#80848;'>任务详情</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="例如：我今天需要干什么..." style="height: 13em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+</view>
+<view class='sum'>
+<view class="page">
+    <view class="page__bd">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <view class="weui-uploader">
+                        <view class="weui-uploader__hd">
+                            <view class="weui-uploader__title" style='color:#80848f;font-weight:bold;'>图片上传</view>
+                            <view class="weui-uploader__info">{{files.length}}/9</view>
+                        </view>
+                        <view class="weui-uploader__bd">
+                            <view class="weui-uploader__files" id="uploaderFiles">
+                                <block wx:for="{{files}}" wx:key="*this">
+                                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                                    </view>
+                                </block>
+                            
+                            </view>
+                            <view class="weui-uploader__input-box">
+                                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                             
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view> 
+    </view>
+    <view class="weui-cells">
+</view>
+ 
+</view>
+
+<view class='bottom'>
+     <view bindtap="onTap">
+       <form bindsubmit='login' report-submit='{{true}}'>
+                   <button class="journey-container">
+        完成
+    </button>
+        </form>
+     </view>
+</view>

@@ -3,14 +3,16 @@
       <view class='head'>
             <open-data  class='usepic' type="userAvatarUrl"></open-data>
       </view>
+      <view style='width:750rpx;height:1000rpx;padding-left:50rpx;background-color: #5dacff;padding-top:20rpx;'>
     <view class='wc'>
-        <text> 昵称：</text>
-        <open-data type="userNickName"></open-data>
+        <text> 昵称</text>
+        <open-data type="userNickName"  style="padding:400rpx"></open-data>
     </view>
     <view class="wc">
          <text>其他</text>
     </view>
     <view class="wc">
           <text>其他</text>
+    </view>
     </view>
 </view>

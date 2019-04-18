@@ -12,17 +12,13 @@
                   <open-data type="userNickName"></open-data>
               </view>
             </view>
-            <view class="wc" bindtap="onTap">
-                  <i-cell title="个人资料" is-link></i-cell>
-            </view>
+           
             <view class="wc">
                  <i-cell title="今日已归档" is-link></i-cell>
             </view>
             <view class="wc">
-                 <i-cell title="已归档" is-link></i-cell>
-            </view>
-            <view class="wc">
-                 <i-cell title="回收站" is-link></i-cell>
+                 <i-cell title="明日归档" is-link></i-cell>
+            
             </view>
           </view>
       </view>
@@ -33,11 +29,11 @@
               <i-swipeout  i-class="i-swipeout-demo-item" operateWidth="{{100}}">
                   <view slot="content">
                         <i-card title="{{item.card_name}}" extra="{{item.peview_time}}" >
-                           <view slot="content">{{item.card_comment}}</view>
+                           <view slot="content" style='color:#495065'>{{item.card_comment}}</view>
                            <view slot="footer">{{item.current_date}}</view>
                         </i-card>
                   </view>
-                    <view  bindtap="deleteTap"  slot="button" class="i-swipeout-demo-button">
+                    <view  catchtap="deleteTap"  slot="button" class="i-swipeout-demo-button">
                         <i-icon type="delete" size="80" color="red" />             
                     </view>
               </i-swipeout>
@@ -45,7 +41,7 @@
      
       
           <view class='tianjia' bindtap="onTap1">
-              <i-icon type="add" size="80" color="blue" />
+              <i-icon type="add" size="90" color="#fff" />
           </view> 
       <view class="dingbu">
             <view bindtap="tap_ch" data-card_tap="null" class="homeicon">

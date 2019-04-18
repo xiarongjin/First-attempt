@@ -1,12 +1,1 @@
-<view class="dingbu">
-            <view bindtap="tap_ch" class="homeicon">
-             <open-data  type="userAvatarUrl"></open-data>
-            </view> 
-             <view class="button-sp-area">
-                   <wux-popover placement="bottomRight" title="ti" content="view">
-                   <wux-popover placement="bottomRight" title="ti" content="view">
-                <button size="mini">bottomRight</button>
-                   </wux-popover>
-                   </wux-popover>
-             </view>
-</view>
+<view><text>点击删除按钮了</text></view>

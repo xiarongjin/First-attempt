@@ -1,0 +1,6 @@
+{
+    "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "i-button": "../../zujian/button/index"
+  }
+}

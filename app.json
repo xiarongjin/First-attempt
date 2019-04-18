@@ -1,6 +1,20 @@
 {
-  "pages": [
+  "pages": [ 
+
+
 "pages/post/post",
+
+      "pages/welcome/welcome",
+      
+
+"pages/fuxi/fuxi",
+ 
+
+   
+ 
+"pages/info/info",
+ 
+
 
 "pages/postdemo/postdemo",
     "pages/test/test",
@@ -9,16 +23,13 @@
     
 
  
-       
-     
-    "pages/welcome/welcome",
-    
+    "pages/bianji/bianji",
     "pages/detial/detial",
-    "pages/info/info",
+   
     "pages/richtest/richtest"
   ],
   "window": {
-    "navigationBarTitleText": "这里是标题",
+    "navigationBarTitleText": "记忆卡片",
     "navigationBarTextStyle": "black"
   }
 }

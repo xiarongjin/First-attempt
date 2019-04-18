@@ -16,80 +16,22 @@ Page({
     card_tap: "onTap2",
 
     weeklyMovieList: [
+
+      {
+        id: 0,
+        card_name: "毛概考试重点",
+        card_comment: "中国特色社会主义理论",
+        peview_time: "应在1小时后复习",
+        current_date: "2019/4/1 15:06",
+      },
       {
         id:0,
-        card_name:"卡片名字",
-        card_comment:"卡片内容",
-        peview_time:"应在多久复习",
-        current_date:"2019/4/14",
+        card_name:"英语四级单词",
+        card_comment:"总背不下来的一些单词",
+        peview_time:"今日已归档",
+        current_date:"2019/4/14 12:47",
       },
-      {
-        id: 0,
-        card_name: "卡片名字",
-        card_comment: "卡片内容",
-        peview_time: "应在多久复习",
-        current_date: "2019/4/14",
-      }, {
-        id: 0,
-        card_name: "卡片名字",
-        card_comment: "卡片内容",
-        peview_time: "应在多久复习",
-        current_date: "2019/4/14",
-      }, {
-        id: 0,
-        card_name: "卡片名字",
-        card_comment: "卡片内容",
-        peview_time: "应在多久复习",
-        current_date: "2019/4/14",
-      }, {
-        id: 0,
-        card_name: "卡片名字",
-        card_comment: "卡片内容",
-        peview_time: "应在多久复习",
-        current_date: "2019/4/14",
-      }, {
-        id: 0,
-        card_name: "卡片名字",
-        card_comment: "卡片内容",
-        peview_time: "应在多久复习",
-        current_date: "2019/4/14",
-      }, {
-        id: 0,
-        card_name: "卡片名字",
-        card_comment: "卡片内容",
-        peview_time: "应在多久复习",
-        current_date: "2019/4/14",
-      }, {
-        id: 0,
-        card_name: "卡片名字",
-        card_comment: "卡片内容",
-        peview_time: "应在多久复习",
-        current_date: "2019/4/14",
-      }, {
-        id: 0,
-        card_name: "卡片名字",
-        card_comment: "卡片内容",
-        peview_time: "应在多久复习",
-        current_date: "2019/4/14",
-      }, {
-        id: 0,
-        card_name: "卡片名字",
-        card_comment: "卡片内容片内容片内容片内容片内容片内容片内容片内容片内容片内容",
-        peview_time: "应在多久复习",
-        current_date: "2019/4/14",
-      }, {
-        id: 0,
-        card_name: "卡片名字",
-        card_comment: "卡片内容",
-        peview_time: "应在多久复习",
-        current_date: "2019/4/14",
-      }, {
-        id: 0,
-        card_name: "卡片名字",
-        card_comment: "卡片内容",
-        peview_time: "应在多久复习",
-        current_date: "2019/4/14",
-      },
+      
     ],
     count: 0,
     score: 61
@@ -138,7 +80,7 @@ Page({
   // 点击添加事件处理函数
   onTap1: function (event) {
     wx.navigateTo({
-      url: "/pages/richtest/richtest"
+      url: "/pages/bianji/bianji"
     });
     
   },
@@ -147,7 +89,7 @@ Page({
     var textId = event.currentTarget.dataset.textId;
     console.log(textId);
     wx.navigateTo({
-      url: "/pages/detial/detial?id=" + textId
+      url: "/pages/fuxi/fuxi?id=" + textId  
     });
 
   },

@@ -3,13 +3,15 @@
  
  display: flex;
   flex-direction: column;
+
   justify-content: center;
  font-size: 30rpx;
+
 
 }
 .head{
   width: 750rpx;
-  background-color: #5cadff;
+  background-color: #2d8cf0;
   height: 350rpx;
   
   
@@ -28,11 +30,11 @@
 }
 
 .wc {
+  overflow:hidden;
+     padding: 20rpx;
+ width: 600rpx;
+  padding-left: 40rpx;
+  border-bottom: 0.3rpx solid; 
   
-     height: 60rpx;
-  width: 750rpx;
-  padding: 20rpx;
-  border-bottom: 0.5rpx solid; 
-  
-    border-color:#cfcfcf;
+    border-color:#2b85e4;
 }

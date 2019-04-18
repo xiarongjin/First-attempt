@@ -20,27 +20,18 @@
 }
 
 .motto{
-    margin-top:60rpx;
-    font-size:64rpx;
-    font-weight: bold;
+    margin-top:40rpx;
+    
+   
 }
 
 .journey-container{
-    margin-top: 400rpx;
-    box-shadow: 3px 3px 10px rgb(0, 110, 255);
-    border: 1rpx solid rgb(0, 110, 255);
-    width: 600rpx;
-    height: 80rpx;
-    border-radius: 3px;
-    text-align:center;
-    background-color: rgb(0, 140, 255);
-}
-
-.journey{
-    font-size:32rpx;
-    
-    line-height:80rpx;
-    color: #fff;
+   margin-top: 36%;
+   width: 70%; 
+   height: 80rpx;
+   font-size: 36rpx;
+   background-color: #387ef5;
+   box-shadow: 3px 3px 10px #387ef5;
 }
 
 page{
