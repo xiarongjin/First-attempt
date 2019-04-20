@@ -18,7 +18,7 @@ Page({
     weeklyMovieList: [
 
       {
-        id: 0,
+        id: 1,
         card_name: "毛概考试重点",
         card_comment: "中国特色社会主义理论",
         peview_time: "应在1小时后复习",
@@ -95,9 +95,22 @@ Page({
   },
   // 删除事件处理函数
   deleteTap:function(event){
-     wx.navigateTo({
-      url: '/pages/test/test',
-     })
+    var id = event.currentTarget.dataset.id;
+    console.log(id);
+    wx.request({
+  
+    //  url:   ,
+        data: {
+       id:id
+      },
+      header: {
+        "Content-Type": "application/json"
+      },
+      success: function (res) {
+        var data = res.data;
+      }
+});
+    
   },
   
  

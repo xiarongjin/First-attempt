@@ -5,31 +5,32 @@
     background-color:#fff;
 }
 
-.avatar{
-    
+.avatar{   
   overflow:hidden;
   display: block;
   width: 260rpx;
   height: 260rpx;
   margin: 20rpx;
-  margin-top: 150rpx;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-
+  margin-top: 150rpx; 
+  
+  line-height: 200rpx;
+ 
 }
 
 .motto{
-    margin-top:40rpx;
+    margin-top:0%;
     
    
 }
 
 .journey-container{
-   margin-top: 36%;
+  position: fixed;
+  bottom: 10%;
+  left: 15%;
    width: 70%; 
    height: 80rpx;
    font-size: 36rpx;
+   
    background-color: #387ef5;
    box-shadow: 3px 3px 10px #387ef5;
 }

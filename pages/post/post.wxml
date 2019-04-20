@@ -25,7 +25,7 @@
   <view class="page-top {{open ? ['c-state','cover'] : ''}}">
   
       <view class='content'> 
-           <view class='card' wx:for="{{weeklyMovieList}}"bindtap="{{card_tap}}" data-text-id='{{item.id}}'>
+           <view class='card' wx:for="{{weeklyMovieList}}" bindtap="{{card_tap}}" data-text-id='{{item.id}}'>
               <i-swipeout  i-class="i-swipeout-demo-item" operateWidth="{{100}}">
                   <view slot="content">
                         <i-card title="{{item.card_name}}" extra="{{item.peview_time}}" >
@@ -33,7 +33,7 @@
                            <view slot="footer">{{item.current_date}}</view>
                         </i-card>
                   </view>
-                    <view  catchtap="deleteTap"  slot="button" class="i-swipeout-demo-button">
+                    <view  catchtap="deleteTap"  slot="button" class="i-swipeout-demo-button"  data-id='{{item.id}}'>
                         <i-icon type="delete" size="80" color="red" />             
                     </view>
               </i-swipeout>

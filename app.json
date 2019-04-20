@@ -1,32 +1,15 @@
 {
   "pages": [ 
 
-
+"pages/welcome/welcome",
 "pages/post/post",
-
-      "pages/welcome/welcome",
-      
-
 "pages/fuxi/fuxi",
- 
-
-   
- 
 "pages/info/info",
- 
-
-
 "pages/postdemo/postdemo",
-    "pages/test/test",
-  
-  
-    
-
- 
-    "pages/bianji/bianji",
-    "pages/detial/detial",
-   
-    "pages/richtest/richtest"
+"pages/test/test",
+"pages/bianji/bianji",
+"pages/detial/detial",
+"pages/richtest/richtest"
   ],
   "window": {
     "navigationBarTitleText": "记忆卡片",

@@ -1,14 +1,12 @@
 <view class="container">
     <view>
-         <image   class='avatar' src='/image/logo.png'></image>
+        <image class='avatar' src='/image/card.png'></image>
     </view>
     <view class='motto'>
-    
-    <text style='border-bottom:2px solid #bbbec4; font-size:80rpx; color:#bbbec4;height:82rpx;'>记忆卡片</text>
-    
-    <text style='color:#bbbec4; font-size:30rpx;height:10rpx;'> \n背诵其实很简单</text>
+    <text style="font-size:80rpx;font-family:PingFang SC,Helvetica Neue,Helvetica,Tahoma,Arial,Microsoft YaHei,\\9ED1\4F53,STHeiTi,sans-serif; color:#a0a0a0;font-size:64rpx;">记忆卡片</text>
     </view>
+    <text style='color:#bbbec4;font-family:PingFang SC,Helvetica Neue,Helvetica,Tahoma,Arial,Microsoft YaHei,\\9ED1\4F53,STHeiTi,sans-serif;font-size:32rpx;'>根据人脑记忆规律帮您巩固记忆</text>
     <button class="journey-container" bindtap="onTap">
-        微信登入
+       <text style='color:white;font-family:微软雅黑;'> 微信登入</text>
     </button>
 </view>
